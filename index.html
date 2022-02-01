@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Хрю</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="theme-color" content="#FFC0CB" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="pink">
+        <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 300px;
+            max-height: 100vh;
+            margin: auto;
+
+            text-decoration: none;
+            border: none;
+            padding: 12px 40px;
+            font-size: 16px;
+            cursor: pointer;
+            outline: none;
+            transition: 0.2s all;
+        }
+
+        .center-fit:active {
+            transform: scale(0.98);
+        }
+
+        /* .container {
+  position: relative;
+  height: 400px;
+} */
+
+/* .centered-element {
+  margin: 0;
+  position: absolute;
+
+} */
+    </style>
+
+    <script>
+        document.addEventListener("touchstart", function() {},false);
+        function play() {
+            var audio = document.getElementById("audio");
+            audio.play();
+        }
+    </script>
+    </head>
+
+    <body>
+
+
+
+        <!-- <div class="container"> -->
+            <!-- <div class="centered-element"> -->
+                <center><br><br><br><br><br><br><br>
+                    <!-- <div class="imgbox"> -->
+                    <input class="center-fit" type="image" src="pig.png"
+                        onclick="play()">
+                    <!-- </div> -->
+                </center>
+            <!-- </div> -->
+        <!-- </div> -->
+
+        <audio id="audio"
+            src="Sound_22365.mp3"></audio>
+    </body>
+</html>
